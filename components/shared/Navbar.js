@@ -4,7 +4,7 @@ const Navbar = () => {
       {/* NAVBAR START */}
       <div className="navbar-wrapper">
         <nav className="navbar navbar-expand-lg navbar-dark gc-mw9">
-          <a className="navbar-brand mr-3 font-weight-bold" href="#">
+          <a className="navbar-brand mr-3 font-weight-bold" href="/">
             Mobile First Design
           </a>
           <button
@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav">
               <li className="nav-item mr-3">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/portfolios">
                   Portfolio
                 </a>
               </li>
@@ -44,14 +44,14 @@ const Navbar = () => {
             </ul>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item mr-3">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/login">
                   Sign Up
                 </a>
               </li>
               <li className="nav-item mr-3">
                 <a
                   className="nav-link btn btn-success bg-green-2 bright"
-                  href="#"
+                  href="/login"
                 >
                   Sign In
                 </a>

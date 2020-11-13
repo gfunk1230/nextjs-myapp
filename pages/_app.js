@@ -1,8 +1,28 @@
+// import App from "next/app";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/index.scss';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@/styles/index.scss";
 
-function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
-}  
-export default MyApp
+import Navbar from "@/components/shared/Navbar";
+import Hero from "@/components/shared/Hero";
+
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <div className="portfolio-app">
+      <Navbar />
+      {/* {pageProps.appData} */}
+      {Component.name === "Home" && <Hero />}
+      <div className="container">
+        <Component {...pageProps} />
+      </div>
+    </div>
+  );
+};
+
+// MyApp.getInitialProps = async (context) => {
+//   const initialProps = App.getInitialProps && (await App.getInitialProps(context));
+//   return {
+//     pageProps: { appData: "Hello app data", ...initialProps.pageProps },
+//   };
+// };
+export default MyApp;
