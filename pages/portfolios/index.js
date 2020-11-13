@@ -1,12 +1,12 @@
-// const apiCall = () => {
-//   return new Promise((res, rej) => {
-//     setTimeout(() => {
-//       res( {
-//         testingData: 'hello testing portfolio initial props',
-//       });
-//     }, 5000)
-//   })
-// }
+const apiCall = () => {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      res( {
+        testingData: 'hello testing portfolio initial props',
+      });
+    }, 5000)
+  })
+}
 
 const Portfolios = ({testingData}) => {
   return (
@@ -14,7 +14,7 @@ const Portfolios = ({testingData}) => {
       <section className="section-title">
         <div className="px-2">
           <div className="pt-5 pb-4">
-            {/* {testingData} */}
+            {testingData}
             <h1>Portfolios </h1>
           </div>
         </div>
