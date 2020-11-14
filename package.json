@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node server/index.js",
+    "dev": "nodemon --watch server server/index.js",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.4.0",
     "next": "10.0.1",
     "react": "17.0.1",
     "react-bootstrap": "1.0.0-beta.16",
